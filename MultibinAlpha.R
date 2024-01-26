@@ -330,7 +330,7 @@ dataPheno = cbind(dataPheno, myobsvec)
 # clinical covariates
 dataPheno$yage        = dataPheno$Age
 dataPheno$ysex        = (dataPheno$'Biological Sex' == "Female") + 0L
-dataPheno$yinfercmv   = (dataPheno$'inferred CMV status' == " Inferred CMV +") + 0L
+dataPheno$yinfercmv   = (dataPheno$'inferred CMV status' == "Inferred CMV +") + 0L
 dataPheno$ycmv        = (dataPheno$'Virus Diseases' == "Cytomegalovirus +") + 0L
 dataPheno$ytotalreads = totalReads
 
