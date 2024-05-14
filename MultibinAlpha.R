@@ -670,7 +670,7 @@ ApplyRes_shannon["LOESS", "infercmv"] = paste0(round(infercmv_shannon_m8$coeffic
                                                 formatC(infercmv_shannon_m8$coefficients[2,4], format = "e", digits = 2), ")")
 ApplyRes_shannon["LOESS", "cmv"] = paste0(round(cmv_shannon_m8$coefficients[2,1],3), " (",
                                            formatC(cmv_shannon_m8$coefficients[2,4], format = "e", digits = 2), ")")
-ApplyRes_shannon["LOESS", "totalreads"] = paste0(round(totalreads_shannon_m8$coefficients[2,1],3), " (",
+ApplyRes_shannon["LOESS", "totalreads"] = paste0(round(totalreads_shannon_m8$coefficients[2,1]/(10^-7),3), " (",
                                                   formatC(totalreads_shannon_m8$coefficients[2,4], format = "e", digits = 2), ")")
 
 ##################################################################
